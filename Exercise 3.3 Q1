@@ -1,0 +1,20 @@
+// Exercise 3.3 Q1.cpp : This program show the total price 
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float price = 9.90;
+	int quantity;
+	const int DISC = 10;
+	float totalprice;
+
+	cout << "Enter quantity purchased: " << endl;
+	cin >> quantity;
+	totalprice = (price * quantity) * (100 - DISC) / 100.00;
+	cout << "The total price is: " << totalprice << endl;
+
+	return 0;
+}
