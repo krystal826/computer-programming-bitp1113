@@ -1,0 +1,38 @@
+//Exercise 4.3 Q1: This program calculates the parking fees
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const int min_hr = 3;
+	char vehicle;
+	double fees;
+	int hour;
+
+	cout << "Enter vehicle used (C for car, L for lorry, B for bus): ";
+	cin >> vehicle;
+	cout << "Enter parking time duration (in hour): ";
+	cin >> hour;
+
+	switch (vehicle)
+	{
+	case 'C':
+		fees = (1 * min_hr) + (1.5 * (hour - min_hr));
+		cout << "The parking fees is " << fees << endl << endl;
+		break;
+	case 'L':
+		fees= (1.5 * min_hr) + (2.5 * (hour - min_hr));
+		cout<< "The parking fees is " << fees << endl << endl;
+		break;
+	case 'B':
+		fees = (2 * min_hr) + (3.5 * (hour - min_hr));
+		cout << "The parking fees is " << fees<<endl<<endl;
+		break;
+	default:
+		cout << "Error." << endl << endl;
+	}
+
+	return 0;
+}
