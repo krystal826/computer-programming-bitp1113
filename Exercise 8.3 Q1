@@ -1,0 +1,31 @@
+//Exercise 8.3: This program reads 5 scores, then the program can display how much each score differs from the highest score
+//Author: Yoong Cheng Nee
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int score[5];
+	int diff, highest;
+	
+	cout << "Enter 5 scores: ";
+	for (int i = 0; i < 5; i++)
+		cin >> score[i];
+	highest = score[0];
+
+	for (int i = 1; i < 5; i++)
+		if (highest < score[i])
+			highest = score[i];
+
+	cout << "The highest score is :" << highest<<endl;
+	cout << "This scores and their differences from the highest are: "<<endl;
+	for (int i = 0; i < 5; i++)
+	{
+		diff = highest - score[i];
+		cout << score[i] << " off by " << diff<<endl;
+	}
+	return 0;
+}
