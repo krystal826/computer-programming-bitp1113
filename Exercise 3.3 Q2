@@ -1,0 +1,21 @@
+// Exercise 3.3 Q2.cpp : This program converts time in second to time in hours, minutes and seconds.
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int time, hour, minute, second;
+	const int SCND_TO_HOUR = 3600;
+	const int SCND_TO_MINUTE = 60;
+
+	cout << "Input the total time in seconds: ";
+	cin >> time;
+	hour = time / SCND_TO_HOUR;
+	minute = (time % SCND_TO_HOUR) / SCND_TO_MINUTE;
+	second = time % SCND_TO_MINUTE;
+
+	cout << time << " seconds are equal to " << hour << " hours, " << minute << " minutes and " << second << " seconds."<<endl<<endl;
+	return 0;
+}
