@@ -1,0 +1,19 @@
+// Exercise 3.3 Q3.cpp : This program calculate monthly payment for loan.
+//Author: Yoong Cheng Nee
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	double loan_amount, annual_interest_rate, monthly_payment;
+	int year;
+	cout << "Input loan amount(RM): ";
+	cin >> loan_amount;
+	cout << "Input annual interest rate (%): ";
+	cin >> annual_interest_rate;
+	cout << "Input number of years: ";
+	cin >> year;
+	monthly_payment = loan_amount * (1 + annual_interest_rate / 100 * year) / (year * 12);
+	cout << "Monthly payment for this loan is (RM): "<<monthly_payment<<endl<<endl;
+}
