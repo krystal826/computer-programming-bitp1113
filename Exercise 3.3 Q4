@@ -1,0 +1,18 @@
+//Exercise 3.3 Q4: This program calculates a moving object's kinetic energy
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double KE, m, v;
+	cout << "Input the object's mass (kg): ";
+	cin >> m;
+	cout << "Input the object's velocity (m/s): ";
+	cin >> v;
+	KE = m * v * v*1/2;
+	cout << "The kinetic energy (Joules): " << KE<<endl<<endl;
+
+	return 0;
+}
