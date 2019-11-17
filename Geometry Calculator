@@ -1,0 +1,53 @@
+// Geometry Calculator.cpp : This program calculate the area of circle or rectangle or triangle
+//Author:Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int choice;
+	cout << "Geometry Calculator"<<endl<<endl;
+	cout << "\t1. Calculate the Area of a Circle" << endl;
+	cout << "\t2. Calculate the Area of a rectangle" << endl;
+	cout << "\t3. Calculate the Area of a Triangle" << endl;
+	cout << "\t4. Quit." << endl << endl;
+	cout << "Enter your choice (1-4): ";
+	cin >> choice;
+
+	double r,a,l,w,b,h;
+	
+	switch (choice)
+	{
+	case 1:
+		cout << "Please enter radius of the circle: ";
+		cin >> r;
+		a = 3.14159*r*r;
+		cout << "The area of the circle is " << a << endl << endl;
+		break;
+
+	case 2:
+		cout << "Please enter the length and width of the rectangle: ";
+		cin >> l >> w;
+		a = l * w;
+		cout << "The area of the rectangle is " << a << endl << endl;
+		break;
+
+	case 3:
+		cout << "Please enter the length of the triangle's base and its height: ";
+		cin >> b >> h;
+		a = 0.5*b*h;
+		cout << "The area of the triangle is " << a<<endl<<endl;
+		break;
+
+	case 4:
+		cout << "Quit." << endl << endl;
+		break;
+
+	default:
+		cout << "This is not a possible choice."<<endl<<endl;
+	}
+    return 0;
+}
