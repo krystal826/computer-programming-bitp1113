@@ -1,0 +1,43 @@
+// mini calc.cpp : This program demonstrates mini calculator 
+//Author: Yoong Cheng Nee
+
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+
+int main()
+{
+	string name;
+	char op;
+	double num1, num2;
+
+	cout << "Please enter your name: ";
+	cin >> name;
+	cout << "Enter operation '+' or '-' or '*' or '/' : ";
+	cin >> op;
+	cout << "Enter two numbers: ";
+	cin >> num1>> num2;
+
+	switch (op)
+	{
+	case'+':
+		cout << "The addition of the two numbers is: " << showpoint <<setprecision(10)<< num1 + num2;
+		break;
+	case'-':
+		cout << "The subtraction of the two numbers is: " <<showpoint << setprecision(10) << num1 - num2;
+		break;
+	case'*':
+		cout << "The multiplication of the two numbers is: " << showpoint << setprecision(10) << num1 * num2;
+		break;
+	case'/':
+		if (num2 != 0)
+			cout << "The division of the two numbers is: " << showpoint << setprecision(10) << num1 / num2;
+		else
+			cout << "Error." << endl;
+		break;
+	default:
+		cout << "Illegal operation." << endl;
+	}
+	return 0;
+}
