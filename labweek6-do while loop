@@ -1,0 +1,29 @@
+// labweek6 do while loop.cpp : Write a program with a do while loop that display whether a user enter an integer
+// of even or odd. The code should then ask the user if he/she wants to test another number. The loop should repeat 
+// as long as the user enters 'Y' or 'y'.
+//Author: Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	char again;
+
+	do
+	{
+		cout << "Please enter an integer number: ";
+		cin >> num;
+		if (num % 2 == 0)
+			cout << "The number entered is an even number."<<endl;
+		else
+			cout << "The number entered is an odd number."<<endl;
+		cout << "Please enter 'Y' or 'y' if u wish to continue: ";
+		cin >> again;
+		cout << "\n\n";
+	} while (again == 'Y' || again == 'y');
+	cout << "Thank You."<<endl<<endl;
+    return 0;
+}
