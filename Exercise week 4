@@ -1,0 +1,25 @@
+// Exercise3.3
+//Author: Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void star()
+{
+	cout << "This is lab 4" << endl;
+	cout << "Yoong Cheng Nee, Do Exercise" << endl;
+}
+
+int main()
+{
+	star();
+	double price = 9.90, totalprice;
+	int quantity, DISC=10;
+	cout << "Please enter the quantity purchased: ";
+	cin >> quantity;
+	totalprice = (price*quantity)*(100 - DISC) / 100.00;
+	cout << "The total price is: " << totalprice << endl;
+	return 0;
+
+}
