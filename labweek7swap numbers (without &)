@@ -1,0 +1,38 @@
+// labweek7.cpp : swap numbers
+//Author: Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void swap(int x, int y); //declare function prototype
+
+int main()
+{
+	//input 2 no. and swap them
+
+	int x, y;
+	cout << "Please enter two integers: ";
+	cin >> x >> y;
+
+	swap(x, y); //function call to swap and the display is done in it
+  
+  cout << "x in main is: " << x << endl;
+	cout << "y in main is: " << y << endl;
+  
+	return 0;
+}
+//define function
+void swap(int x, int y)
+{
+	int temp;
+	cout << "You entered x is: ";
+	cout << x << endl;
+	cout << "You entered y is: ";
+	cout << y << endl;
+	//do swapping algotrithm
+	temp = x;
+	x = y;
+	y = temp;
+	cout << "After swap the value x now is: " << x << endl;
+	cout << "After swap the value y now is: " << y << endl;
+}
