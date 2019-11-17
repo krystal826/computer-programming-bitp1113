@@ -1,0 +1,29 @@
+//Exercise 4.3 Q2: This program calculates total cost
+//Author :Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const double price=20.0;
+	int quantity;
+	double total;
+
+	cout << "Enter number of units sold: ";
+	cin >> quantity;
+
+	if (quantity >= 10 && quantity <= 19)
+		total = quantity * price * 0.2;
+	else if (quantity >= 20 && quantity <= 49)
+		total = quantity * price * 0.3;
+	else if (quantity = 50 && quantity <= 99)
+		total = quantity * price * 0.4;
+	else if (quantity >= 100)
+		total = quantity * price * 0.5;
+	else
+		total = quantity * price;
+	cout << "The total cost of the purchase is " << total << endl << endl;
+
+	return 0;
+}
