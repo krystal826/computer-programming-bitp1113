@@ -1,0 +1,26 @@
+//9.2.2 Exp2
+//Author:Yoong Cheng Nee
+
+#include "stdafx.h"
+#include<iostream>
+#define size 5
+using namespace std;
+
+double totalPrice(double newPrice[]);
+
+void main()
+{
+	double price[size] = { 5.25,10.80,15.40,20.60,25.50 };
+
+	cout << "\n\nThe total price is : RM"
+		<< totalPrice(price) << "\n\n\n";
+}
+
+double totalPrice(double newPrice[])
+{
+	double total = 0;
+
+	for (int i = 0; i < 5; i++)
+		total += newPrice[i];
+	return total;
+}
