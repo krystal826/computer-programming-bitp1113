@@ -1,0 +1,35 @@
+//9.2.3 Exp3
+//Author:Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+#define size 5
+using namespace std;
+
+void discount(int disc, double newPrice[]);
+void display(const double discPrice[]);
+
+void main()
+{
+	double price[size] = { 5.25,10.80,15.40,20.60,25.50 };
+	int discountValue;
+
+	cout << "\n\n Enter discount(%): ";
+	cin >> discountValue;
+	discount(discountValue, price);
+	display(price);
+}
+
+void discount(int disc, double newPrice[])
+{
+	for (int i = 0; i < 5; i++)
+		newPrice[i] = newPrice[i] - (newPrice[i] * disc / 100);
+}
+
+void display(const double discPrice[])
+{
+	cout << "\nNew price values after discount are: \n\n";
+	for (int i = 0; i < 5; i++)
+		cout << " " << discPrice[i];
+	cout << "\n\n\n";
+}
