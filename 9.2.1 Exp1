@@ -1,0 +1,38 @@
+//9.2.1 Exp1
+//Author:Yoong Cheng Nee
+
+#include "stdafx.h"
+#include <iostream>
+#define size 5
+using namespace std;
+
+void square(int number[]);
+void display(const int number[]);
+
+void main()
+{
+	int number[5] = { 2,4,6,8,10 };
+	square(number);//function call
+
+	cout << "Elements of the array number after calling the square function: \n";
+
+	for (int i = 0; i < 5; i++)
+		cout << "number[" << i << "]:" << number[i] << endl;
+
+    cout << "\nElements of the array number printed by the display function: \n";
+
+	display(number);//function call
+	cout << "\n\n";			
+}
+
+void square(int number[])
+{
+	for (int i = 0; i < 5; i++)
+		number[i] = number[i] * number[i];
+}
+
+void display(const int number[])
+{
+	for (int i = 0; i < 5; i++)
+		cout << "number[" << i << "]: " << number[i] << endl;
+}
