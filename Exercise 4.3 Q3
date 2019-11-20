@@ -1,0 +1,53 @@
+//Exercise 4.3 Q3: This program can compare faces between 3 faces.
+//Author:Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double eye1, eye2, eye3, nosechin1, nosechin2, nosechin3,ratio1,ratio2,ratio3,smallest_ratio,d1,d2,d3;
+
+	cout << "Enter values in cm." << endl << endl;
+	cout << "Enter eye distance and nose to chin distance for image 1: ";
+	cin >> eye1>>nosechin1;
+	cout << "Enter eye distance and nose to chin distance for image 2: ";
+	cin >> eye2>>nosechin2;
+	cout << "Enter eye distance and nose to chin distance for image 3: ";
+	cin >> eye3>>nosechin3;
+
+	ratio1 = eye1 / nosechin1;
+	ratio2 = eye2 / nosechin2;
+	ratio3 = eye3 / nosechin3;
+
+	if (ratio3 > ratio1)
+		d1 = ratio3 - ratio1;
+	else
+		d1 = ratio1 - ratio3;
+	if (ratio3 > ratio2)
+		d2 = ratio3 - ratio2;
+	else
+		d2 = ratio2 - ratio3;
+	if (ratio2 - ratio1)
+		d3 = ratio2 - ratio1;
+	else
+		d3 = ratio1 - ratio2;
+
+	smallest_ratio = d1;
+
+	if (d2 < smallest_ratio)
+	{
+		smallest_ratio = d2;
+		cout << "Best matches is between image 2 and image 3." << endl << endl;
+	}
+	else if (d3 < smallest_ratio)
+	{
+		smallest_ratio = d3;
+		cout << "Best matches is between image 1 and image 2." << endl << endl;
+	}
+	else
+		cout << "Best matches is between image 1 and image 3." << endl << endl;
+		
+	return 0;
+
+}
