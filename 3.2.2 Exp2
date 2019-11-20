@@ -1,0 +1,20 @@
+//3.2.2 Exp2 pg 37: This program demonstrate unary, arithmetic, assignment operator, and its precedence
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 5, b = 6, c = 7;
+	int x, y = 3;
+
+	x = --a*(3 + b) / 2 - c++ * b;
+	y %= 5; y += c;
+	cout << "Value of x is " << x << endl;
+	cout << "Value of y is " << y << endl;
+	cout << "Value of a is " << a << endl;
+	cout << "Value of b is " << b << endl;
+	cout << "Value of c is " << c << endl;
+	return 0;
+}
