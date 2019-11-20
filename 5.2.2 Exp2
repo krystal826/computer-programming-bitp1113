@@ -1,0 +1,24 @@
+//5.2.2 Exp2
+//Author:Yoong Cheng Nee
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int count;
+
+	cout << "We are having a countdown...\n\n";
+	cout << "Enter the number to start the countdown: ";
+	cin >> count;
+
+	do
+	{
+		cout << count << "..." << endl;
+		count -= 1;
+	} while (count != 0);
+	cout << "<<<< Blast Off >>>>\n";
+
+
+	return 0;
+}
