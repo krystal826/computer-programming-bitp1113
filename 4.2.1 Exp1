@@ -1,0 +1,20 @@
+// 4.2.1 Exp1 pg49.cpp : This program requires input from user to select colour
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char colour;
+	cout << "Please enter your chosen colour (G/B): ";
+	cin >> colour;
+
+	if (colour == 'G')
+		cout << "\nYou choose green colour.";
+	else
+		cout << "\nYou choose blue colour.";
+	if (colour != 'G')
+		cout << "\nYou have not chosen green colour.";
+}
+
