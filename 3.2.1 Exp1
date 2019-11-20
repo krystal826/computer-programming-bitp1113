@@ -1,0 +1,17 @@
+// 3.2.1 Exp1 pg36.cpp : This program demonstrates C++ elements in converting distances from miles to kilometers
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+#define mile_to_km 1.609 // const mile_to_km=1.609
+
+int main()
+{
+	double miles, km;
+
+	cout << "Enter the distance in miles: ";
+	cin >> miles;
+	km = miles * mile_to_km;
+	cout << "That equals " << km << " kilometers" << endl;
+	return 0;
+}
