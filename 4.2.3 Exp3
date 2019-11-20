@@ -1,0 +1,26 @@
+// 4.2.3 Exp3 pg52.cpp : This program demonstrated the nested if statement
+//Author: Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int year;
+	char course;
+
+	cout << "Enter 'M' if you are a Manufacturing Engineering student: ";
+	cin >> course;
+
+	if ((course == 'M') || (course == 'm'))
+	{
+		cout << "What year are you in?";
+		cin >> year;
+		if (year == 1)
+			cout << "\n\nHi! You are a Manufacturing Engineering first year student.";
+		else
+			cout << "\n\nHi! You are a Manufacturing Engineering student.";
+	}
+	else
+		cout << "\n\nHi! You are not a Manufacturing Engineering student.";
+}
