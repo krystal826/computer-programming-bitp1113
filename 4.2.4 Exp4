@@ -1,0 +1,22 @@
+// 4.2.4 Exp4 pg53.cpp : This program calculates a clerk's pay rate at RM8 per hour. The minimum working hours is 6. The ?: operators adjust hours to 6 if the hours entered is less than 6 hours.
+//Author : Yoong Cheng Nee
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	const double payrate = 8.0;
+	const int minhrs = 6;
+
+	double hours, charges;
+
+	cout << "How many hours worked?: ";
+	cin >> hours;
+
+	hours = hours < minhrs ? minhrs : hours;
+	charges = payrate * hours;
+	cout << fixed << showpoint << setprecision(2) << "The pay is RM" << charges << endl;
+	return 0;
+}
