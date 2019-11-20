@@ -1,0 +1,18 @@
+//5.2.1 Exp1
+//Author:Yoong Cheng Nee
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i = 1;
+	while (i <= 5)
+	{
+		cout << " Loop number " << i
+			<< " in the while loop\n ";
+		i++;
+	}
+
+	return 0;
+}
