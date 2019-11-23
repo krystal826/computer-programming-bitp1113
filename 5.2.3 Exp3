@@ -1,0 +1,14 @@
+//5.2.3 Exp3
+//Author:Yoong Cheng Nee
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int i;
+	for (i = 1; i < 6; i++)
+	{
+		cout << i << " ";
+	}
+}
